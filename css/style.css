@@ -1,0 +1,109 @@
+:root {
+    font-family: "DM Sans", sans-serif;
+    font-size: 62.5%;
+    --color-bgallblack: rgba(16, 21, 28, 1);
+    --color-linkbox: rgba(250, 3, 105, 1);
+    --color-font: rgba(255, 255, 255, 1);
+    --color-textgrey: rgba(126, 133, 151, 1);
+    --color-container: rgba(20, 26, 37, 1);
+    --color-gradient: linear-gradient(rgba(67, 35, 113, 1),rgba(250, 174, 123, 1));
+}
+body {
+    background-color: var(--color-bgallblack);
+    color: var(--color-font);
+}
+.last h2 {
+    color: rgba(26, 26, 26, 1);
+}
+.last {
+    background-color: var(--color-font);
+}
+.seassion {
+    background-color: var(--color-linkbox);
+    color: var(--color-font);
+}
+.stepbox {
+    background-color: var(--color-container);
+    margin-left: 2.4rem;
+    margin-right: 2.3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 2.4rem;
+    min-height: 26.2rem;
+    min-width: 32.7rem;
+}
+.step {
+    color: var(--color-font);
+    background-color: var(--color-linkbox);
+    margin-left: 9.19em;
+    margin-right: 9.14em;
+    margin-top: 10.42em;
+    margin-bottom: 0.42em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.35em;
+    padding-bottom: 0.35em;
+    border-radius: 6.3rem;
+    min-width: 7.1rem;
+}
+#step1{
+    /*margin-left: 2.83em;
+    margin-right: 2.83em;*/
+    margin-top: 0.42em;
+    /*margin-bottom: 3.78em;*/
+}
+#step2{
+    margin-left: 2.83em;
+    margin-right: 2.83em;
+    margin-top: 0.85em;
+    /*margin-bottom: 3.78em;*/
+}
+#step3{
+    margin-left: 2.83em;
+    margin-right: 2.83em;
+    margin-top: 0.85em;
+    /*margin-bottom: 3.78em;*/
+}
+#step4{
+    margin-left: 2.83em;
+    margin-right: 2.83em;
+    margin-top: 0.85em;
+    /*margin-bottom: 3.78em;*/
+}
+#start {
+    color: var(--color-linkbox);
+}
+.why {
+    background-color: var(--color-font);
+}
+#whyp {
+    background-color: var(--color-container);
+}
+#chat {
+    color: var(--color-font);
+    background-color: var(--color-container);
+}
+h2 {
+    font-size: 3.2rem;
+    
+}
+h3 {
+    font-size: 2.4rem;
+}
+p {
+    font-size: 1.4rem;
+    color: rgba(126, 133, 151, 1);
+}
+ol {
+    list-style: none;
+    padding-left: 0;
+}
+img {
+}
+a {
+    text-decoration: none;
+}
+footer {
+    background-color: var(--color-font);
+}
+
