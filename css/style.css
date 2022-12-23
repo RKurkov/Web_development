@@ -1,6 +1,7 @@
 :root {
     font-family: "DM Sans", sans-serif;
     font-size: 62.5%;
+    box-sizing: border-box;
     --color-bgallblack: rgba(16, 21, 28, 1);
     --color-linkbox: rgba(250, 3, 105, 1);
     --color-font: rgba(255, 255, 255, 1);
@@ -12,98 +13,431 @@ body {
     background-color: var(--color-bgallblack);
     color: var(--color-font);
 }
-.last h2 {
-    color: rgba(26, 26, 26, 1);
-}
-.last {
-    background-color: var(--color-font);
-}
-.seassion {
-    background-color: var(--color-linkbox);
-    color: var(--color-font);
-}
-.stepbox {
-    background-color: var(--color-container);
-    margin-left: 2.4rem;
-    margin-right: 2.3rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    border-radius: 2.4rem;
-    min-height: 26.2rem;
-    min-width: 32.7rem;
-}
-.step {
-    color: var(--color-font);
-    background-color: var(--color-linkbox);
-    margin-left: 9.19em;
-    margin-right: 9.14em;
-    margin-top: 10.42em;
-    margin-bottom: 0.42em;
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: 0.35em;
-    padding-bottom: 0.35em;
-    border-radius: 6.3rem;
-    min-width: 7.1rem;
-}
-#step1{
-    /*margin-left: 2.83em;
-    margin-right: 2.83em;*/
-    margin-top: 0.42em;
-    /*margin-bottom: 3.78em;*/
-}
-#step2{
-    margin-left: 2.83em;
-    margin-right: 2.83em;
-    margin-top: 0.85em;
-    /*margin-bottom: 3.78em;*/
-}
-#step3{
-    margin-left: 2.83em;
-    margin-right: 2.83em;
-    margin-top: 0.85em;
-    /*margin-bottom: 3.78em;*/
-}
-#step4{
-    margin-left: 2.83em;
-    margin-right: 2.83em;
-    margin-top: 0.85em;
-    /*margin-bottom: 3.78em;*/
-}
-#start {
-    color: var(--color-linkbox);
-}
-.why {
-    background-color: var(--color-font);
-}
-#whyp {
-    background-color: var(--color-container);
-}
-#chat {
-    color: var(--color-font);
-    background-color: var(--color-container);
+h1 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+    margin-top: 2.5em;
 }
 h2 {
     font-size: 3.2rem;
-    
+    font-weight: 500;
+    color: var(--color-font)
 }
 h3 {
     font-size: 2.4rem;
+    color: var(--color-font)
 }
 p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    font-weight: 400;
     color: rgba(126, 133, 151, 1);
 }
 ol {
     list-style: none;
     padding-left: 0;
 }
-img {
-}
 a {
     text-decoration: none;
 }
 footer {
-    background-color: var(--color-font);
+    background:#F9F9FB;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
+.hlogo {
+    margin-left: 1.7rem;
+    margin-right: 3.85rem;
+    margin-top: 1.3rem;
+    margin-bottom: 1.4rem;
+}
+.hbutton{
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--color-font);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 10rem;
+    margin-right: 2.4rem;
+    margin-top: 1.9rem;
+    margin-bottom: 1.8rem;
+    max-width: 100%;
+    float: right;
+}
+.h1p {
+    font-size: 3.2rem;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--color-font);
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+.pict_1 {
+    display: block;
+    height: 38rem;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 4.08rem;
+    max-width: 100%;
+}
+.seassion_but {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--color-font);
+    background-color: var(--color-linkbox);
+    padding-left: 4.82em;
+    padding-right: 4.82em;
+    padding-top: 1.14em;
+    padding-bottom: 1.14em;
+    border-radius: 7.14em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.seassion_link_p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-left: 5.6rem;
+    margin-right: 5.5rem;
+    margin-bottom: 8rem;
+    text-align: center;
+}
+.sposors{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.item{
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.start {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--color-linkbox);
+    margin-left: 11.2rem;
+    margin-right: 11.1rem;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.start_h2 {
+    margin-left: 2.9rem;
+    margin-right: 3rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+.stepbox {
+    background-color: var(--color-container);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 2.4rem;
+    max-width: 32.7rem;
+    height: 26.2rem;
+}
+.step_img {
+    display: block;
+    padding-top: 5.6rem;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 4.2rem;
 
+}
+.step {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.8rem;
+    color: var(--color-font);
+    background-color: var(--color-linkbox);
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 6.3rem;
+    text-align: center;
+    width: max-content;
+    margin-inline: auto;
+}
+.steptxt {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+}
+.reasons_h2 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    margin-left: 6.7rem;
+    margin-right: 6.7rem;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+.reason_img {
+    display: block;
+    width: 32.7rem;
+    height: 35.5rem;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 3.02rem;
+    max-width: 100%;
+}
+.reason1_h3 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 2.4rem;
+    margin-right: 13.9rem;
+    margin-bottom: 3rem;
+}
+.reason1 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 2.4rem;
+    margin-right: 2.5rem;
+    margin-bottom: 2.6rem;
+}
+.seassion_but1 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--color-font);
+    background-color: var(--color-linkbox);
+    padding-left: 4.82em;
+    padding-right: 4.82em;
+    padding-top: 1.14em;
+    padding-bottom: 1.14em;
+    border-radius: 7.14em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.reason_img2 {
+    display: block;
+    width: 32.7rem;
+    height: 38.5rem;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 3.02rem;
+    max-width: 100%;
+}
+.reason2_h3 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 2.4rem;
+    margin-right: 15.6rem;
+    margin-bottom: 1.5rem;
+}
+.reason2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 2.4rem;
+    margin-right: 2.9rem;
+    margin-bottom: 3rem;
+}
+.brand {
+    display: inline-block;
+    margin-right: 2rem;
+}
+.brand_txt {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-style: normal;
+    color:var(--color-font);
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.seassion_but2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--color-font);
+    background-color: var(--color-linkbox);
+    padding-left: 4.82em;
+    padding-right: 4.82em;
+    padding-top: 1.14em;
+    padding-bottom: 1.14em;
+    border-radius: 7.14em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.reason3_h3 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 2.4rem;
+    margin-right: 15.7rem;
+    margin-bottom: 1.6rem;
+}
+.reason3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 2.4rem;
+    margin-right: 2.3rem;
+    margin-bottom: 3.2rem;
+}
+.seassion_but3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--color-font);
+    background-color: var(--color-linkbox);
+    padding-left: 4.82em;
+    padding-right: 4.82em;
+    padding-top: 1.14em;
+    padding-bottom: 1.14em;
+    border-radius: 7.14em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10.8rem;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.why_section {
+    background-color: var(--color-font);
+    padding-top: 8rem;
+}
+.div_why {
+    background-color: var(--color-bgallblack);
+    border-radius: 2.4rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8rem;
+    max-width:32.8rem;
+    height: 54.5rem;
+}
+.why {
+    font-size: 3.2rem;
+    font-weight: 500;
+    margin-left: 2.2rem;
+    margin-right: 10.8rem;
+    padding-top: 6.4rem;
+    margin-bottom: 3.8rem;
+
+}
+.whyp1 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-left: 2.2rem;
+    margin-right: 3.1rem;
+    margin-top: 0;
+    margin-bottom: 4rem;
+
+}
+.whyp2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-left: 2.2rem;
+    margin-right: 3.1rem;
+    margin-top: 0;
+    margin-bottom: 3.8rem;
+}
+.seassion_but4 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--color-font);
+    background-color: var(--color-linkbox);
+    padding-left: 3.3rem;
+    padding-right: 6.3rem;
+    padding-top: 1.7rem;
+    padding-bottom: 1.7rem;
+    border-radius: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10.8rem;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.lgm {
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: rgba(26, 26, 26, 1);
+    margin-left: 2.5rem;
+    margin-right: 9.5rem;
+    margin-top: 8.1rem;
+    margin-bottom: 3.8rem;
+}
+.lgm_img {
+    display: block;
+    width: 32.7rem;
+    height: 30.5rem;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 3.02rem;
+    max-width: 100%;
+}
+.lgm_p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-left: 2.6rem;
+    margin-right: 2.5rem;
+    margin-bottom: 0rem;
+    padding-bottom: 5.5rem;
+}
+.year {
+    margin-top: 0;
+    padding-top: 7.9rem;
+
+}
+.footr {
+    display: flex;
+    justify-content:space-between;
+}
+.ftr1 {
+    display: flex;
+}
+.footerr {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 180%;
+    margin-top: 0;
+    padding-left: 2rem;
+    color: rgba(26, 26, 26, 0.56);
+}
+.ftr2 {
+    padding-right: 2rem;
+}
+.f1 {
+    margin-right: 2rem;
+}
+.ftr11 {
+    margin-bottom: 1.2rem;
+}
+.ftr22{
+    margin-right: 2rem;
+}
