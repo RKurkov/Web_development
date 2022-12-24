@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@0,500;0,700;1,400&display=swap" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+        <div class="header">
+            <header>
+                <div class="wrapper">
+                    <a href="index.html">
+                    <img class="hlogo" src="img/main_logo.svg" alt="На главную" />
+                    </a>
+                    <button class="hbutton">Let's chat</button>
+                </div>
+            </header>
+        </div>
+        <div class="body">
+            <main>
+                <form action="#" name="contact" method="post" data-netlify="true" class="wrapper forms">
+                    <div class="bigdiv">
+                        <div>
+                            <p class="lab unlich">Личная информация</p>
+                            <div class="lich">
+                                <label for="inname"><p class="lab" style="margin-top: 0;">Имя</p></label>
+                                <input required placeholder="Имя" name="username" id="inname" type="text">
+                                <label for="inname2"><p class="lab">Дата рождения</p></label>
+                                <input placeholder="Дата рождения" name="userdata" id="inname2" type="tel">
+                                <label for="inname3"><p class="lab">Пол</p></label>
+                                <p class="lab" style="margin: 0;"><input placeholder="Пол" name="usersex" id="inname3" value="men" type="radio"> Мужской</p>
+                                <p class="lab" style="margin: 0;"><input placeholder="Пол" name="usersex" id="inname3" value="woman" type="radio"> Женский</p>
+                                <p class="lab" style="margin: 0;"><input placeholder="Пол" name="usersex" id="inname3" value="other" type="radio"> Другой</p>
+                                <label for="inname4"><p class="lab">Пароль</p></label>
+                                <input required placeholder="Пароль" name="userpass" id="inname4" type="password">
+                            </div>
+                        </div>
+                        <div style="margin-left: 6rem;">
+                            <p class="lab unlich">Контакты</p>
+                            <div class="lich">
+                                <label for="inname5"><p class="lab">Email</p></label>
+                                <input placeholder="Email" name="usermail" id="inname5" type="text">
+                                <label for="inname6"><p class="lab">Телефон</p></label>
+                                <input placeholder="Телефон" name="usertel" id="inname6" type="tel">
+                                <label for="inname7"><p class="lab">Удобный интервал для связи</p></label>
+                                <p class="lab" style="margin: 0;"><input placeholder="Удобный интервал для связи" name="usercomf" id="inname7" type="checkbox"> Утро</p>
+                                <p class="lab" style="margin: 0;"><input placeholder="Удобный интервал для связи" name="usercomf" id="inname7" type="checkbox"> День</p>
+                                <p class="lab" style="margin: 0;"><input placeholder="Удобный интервал для связи" name="usercomf" id="inname7" type="checkbox"> Вечер</p>
+                                <p class="lab" style="margin: 0;"><input placeholder="Удобный интервал для связи" name="usercomf" id="inname7" type="checkbox"> Ночь</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="seassion_but" style="max-width: 100%;font-family: 'Roboto'; margin-top: 3rem;" type="submit">
+                        Отправить
+                        <img style="vertical-align:middle; margin-left: 1rem" src="img/send.svg" alt="send">
+                    </button>
+                    <button class="seassion_but" style="max-width: 100%;margin-bottom: 3rem;font-family: 'Roboto'; margin-top: 3rem;" type="reset">
+                        Очистить
+                        <img style="vertical-align:middle; margin-left: 1rem;" src="img/clear.svg" alt="send">
+                    </button>
+                </form>
+            </main>
+        </div>
+        <div class="footer">
+            <footer>
+                <div class="footr wrapper">
+                    <div class="ftr1">
+                        <p class="footerr">© 2020 Inc. </p>
+                        <p class="footerr" style="margin-bottom: 0">All rights reserved</p> 
+                    </div>
+                    <div class="ftr2">
+                        <div>
+                            <a class="log1" href="https://ru-ru.facebook.com/">
+                                <img class="ftr11 ftr22 f1" src="img/logo-facebook.svg" alt="facebook">
+                            </a>
+                            <a class="log2" href="https://twitter.com/?lang=ru">
+                                <img class="ftr11 f1" src="img/logo-twitter.svg" alt="twitter">
+                            </a>
+                        </div>
+                        <div>
+                            <a class="log3" href="https://www.instagram.com/">
+                                <img class="ftr22 f1" src="img/logo-instagram.svg" alt="insta">
+                            </a>
+                            <a class="log4" href="https://github.com/">
+                                <img src="img/logo-github.svg" alt="github">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="to wrapper">
+                    <a class="a1" href="mailto:denksant@yandex.ru">Message us</a>
+                    <a class="a2" href="tel:+79527989326">+7 9527989326</a>
+                </div>
+            </footer>
+        </div>
+</body>
+<style>
+
+        html,
+    body {
+    height: 100%;
+    margin: 0;
+    }
+
+    body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: stretch;
+    min-height: 100%;
+    }
+    .bigdiv {
+        display: flex;
+        justify-content: center;
+    }
+    .header,
+    .footer {
+    flex: 0 1 auto;
+    }
+    .body {
+    flex: 1 1 auto;
+    }
+    .lab{
+        margin: 0;
+        margin-top: 2rem;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 150%;
+        color: var(--wh);   
+    }
+    .lich{
+        margin-top: 0.5rem;
+        width: 300px; /* Размеры */
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+    .unlich{
+        text-align: center;
+    }
+    .to{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+    a[href^="mailto:"] {
+        padding-left: 2rem;
+        font-size: 14px;
+        line-height: 32px;
+        color: rgba(126, 133, 151, 1);
+        text-decoration: none;
+    }
+    a[href^="tel:"] {
+        font-family: 'Dm Sons';
+        font-size: 14px;
+        line-height: 32px;
+        text-decoration: none;
+        color:rgba(126, 133, 151, 1);
+        padding-right: 2rem;
+    }
+    a[href^="tel:"]:before {
+        content: "\260e";
+        margin-right: 0.5em;
+    }
+    ::placeholder {
+        color: blueviolet;
+        font-size: 1em;
+        font-family: 'Roboto'
+    }
+    input[type="text"]{
+        border-radius:20px;
+        height: 35px;
+        width: 290px;
+    }
+    input[type="tel"]{
+        border-radius:20px;
+        height: 35px;
+        width: 290px;
+    }
+    input[type="password"]{
+        border-radius:20px;
+        height: 35px;
+        width: 290px;
+    }
+</style>
+</html>

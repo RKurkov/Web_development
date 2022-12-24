@@ -1,13 +1,18 @@
 :root {
     font-family: "DM Sans", sans-serif;
     font-size: 62.5%;
-    box-sizing: border-box;
     --color-bgallblack: rgba(16, 21, 28, 1);
     --color-linkbox: rgba(250, 3, 105, 1);
     --color-font: rgba(255, 255, 255, 1);
     --color-textgrey: rgba(126, 133, 151, 1);
     --color-container: rgba(20, 26, 37, 1);
-    --color-gradient: linear-gradient(rgba(67, 35, 113, 1),rgba(250, 174, 123, 1));
+    --color-gradient: linear-gradient(45deg,rgba(67, 35, 113, 1),rgba(250, 174, 123, 1));
+}
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
 }
 body {
     background-color: var(--color-bgallblack);
@@ -47,6 +52,27 @@ footer {
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
+button:hover{
+    background: var(--color-gradient);
+    box-shadow: 1px 1px 2px blueviolet;
+    color:honeydew;
+    transform: scale(1.1);
+}
+p::selection{
+    background:rgba(250, 174, 123, 1);
+}
+h2::selection{
+    background:rgba(250, 174, 123, 1);
+}
+h3::selection{
+    background:rgba(250, 174, 123, 1);
+}
+.wrapper {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 30px;
+}
 .hlogo {
     margin-left: 1.7rem;
     margin-right: 3.85rem;
@@ -69,6 +95,13 @@ footer {
     margin-bottom: 1.8rem;
     max-width: 100%;
     float: right;
+    box-shadow: 3px 3px 5px #FA0369;
+}
+.gradient{
+    color:#000;
+    background: linear-gradient(to top,rgba(67, 35, 113, 1),rgba(250, 174, 123, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .h1p {
     font-size: 3.2rem;
@@ -89,6 +122,9 @@ footer {
     margin-bottom: 4.08rem;
     max-width: 100%;
 }
+.pcpict_2 {
+    display: none;
+}
 .seassion_but {
     font-size: 1.4rem;
     font-weight: 500;
@@ -106,6 +142,7 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
+    box-shadow: 3px 3px 5px #FA0369;
 }
 .seassion_link_p {
     font-size: 1.2rem;
@@ -115,7 +152,7 @@ footer {
     margin-bottom: 8rem;
     text-align: center;
 }
-.sposors{
+.sponsors{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -149,7 +186,12 @@ footer {
     margin-bottom: 1.5rem;
     border-radius: 2.4rem;
     max-width: 32.7rem;
+    width: 32.7rem;
     height: 26.2rem;
+}
+.ccc {
+    display:flex;
+    flex-wrap: wrap;
 }
 .step_img {
     display: block;
@@ -233,6 +275,7 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
+    box-shadow: 3px 3px 5px #FA0369;
 }
 .reason_img2 {
     display: block;
@@ -242,6 +285,9 @@ footer {
     margin-right: auto;
     margin-bottom: 3.02rem;
     max-width: 100%;
+}
+.pcimg2 {
+    display: none;
 }
 .reason2_h3 {
     font-size: 2.4rem;
@@ -290,6 +336,7 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
+    box-shadow: 3px 3px 5px #FA0369;
 }
 .reason3_h3 {
     font-size: 2.4rem;
@@ -324,6 +371,7 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
+    box-shadow: 3px 3px 5px #FA0369;
 }
 .why_section {
     background-color: var(--color-font);
@@ -334,7 +382,7 @@ footer {
     border-radius: 2.4rem;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 8rem;
+    padding-bottom: 8rem;
     max-width:32.8rem;
     height: 54.5rem;
 }
@@ -381,6 +429,10 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
+    box-shadow: 3px 3px 5px #FA0369;
+}
+.pcpicture_man {
+    display: none;
 }
 .lgm {
     font-size: 3.2rem;
@@ -399,6 +451,9 @@ footer {
     margin-right: auto;
     margin-bottom: 3.02rem;
     max-width: 100%;
+}
+.lgm_img2 {
+    display: none;
 }
 .lgm_p {
     font-size: 1.6rem;
@@ -440,4 +495,170 @@ footer {
 }
 .ftr22{
     margin-right: 2rem;
+}
+:focus{
+    background-color:#FA0369;
+}
+
+@media screen and (min-width:1200px) {
+    .pch1_p{
+        width: 50rem;
+        font-weight: 500;
+        font-size: 4.8rem;
+        line-height: 6.2rem;
+    }
+    .pcpict_1 {
+        display: none;
+    }
+    .pcpict_2 {
+        display: block;
+    }
+    .size_pict_2{
+        width: 560px;
+        height: 650px;
+        margin: 0;
+    }
+    .sect_1{
+        display: flex;
+        justify-content:space-between;
+        margin-bottom: 8rem;
+    } 
+    .pcstart_h2 {
+        font-size: 4.2rem;
+    }
+    .pcstepbox {
+        width: 26.4rem;
+    }
+    .div_pcreason_1{
+        display: flex;
+        justify-content:space-between;
+    }
+    .pcreason_img {
+        width: 55.8rem;
+        height: 60.7rem;
+    }
+    .div2_pcreason_1 {
+        width: 46rem;
+    }
+    .pcreason1_h3 {
+        font-size: 3.6rem;
+    }
+    .pcreason1 {
+        font-size: 2.1rem;
+    }
+    .pcimg1 {
+        display: none;
+    }
+    .pcimg2 {
+        display: block;
+    }
+    .div_pcreason_2 {
+        display: flex;
+        justify-content:space-between;
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+    }
+    .div2_pcreason_2 {
+        width: 46rem;
+    }
+    .pcreason2_h3 {
+        font-size: 4.2rem;
+        margin-right: 0;
+    }
+    .pcreason2 {
+        font-size: 2.1rem;
+    }
+    .pcbrand_txt {
+        font-size: 2rem;
+    }
+    .pcreason_img2 {
+        width: 55.8rem;
+        height: 65.9rem;
+    }
+    .div_pcreason_3{
+        display: flex;
+        justify-content:space-between;
+    }
+    .pcreason_img3 {
+        width: 55.8rem;
+        height: 60.3rem;
+    }
+    .div2_pcreason_3{
+        width: 46rem;
+    }
+    .pcreason3_h3 {
+        font-size: 3.6rem;
+    }
+    .pcreason3 {
+        font-size: 2.1rem;
+    }
+    .pcwhy_section {
+        padding-top: 18rem;
+    }
+    .pcdiv_why {
+        display: flex;
+        justify-content:space-between;
+        max-width: 114.6rem;
+        height: 49.6rem;
+    }
+    .pcdiv2_why {
+        width: 36.3rem;
+        margin-left: 13rem;
+    }
+    .pcwhy {
+        font-size: 4.2rem;
+        margin-right: 0;
+        padding-top:0 ;
+    }
+    .pcwhyp {
+        font-size: 1.8rem;
+    }
+    .pcpicture_man {
+        display: block;
+        position: relative;
+        bottom: 9rem;
+        right: 10.8rem;
+    }
+    .div_lgm { 
+        display: flex;
+        justify-content:space-between;
+        margin-top: 21.1rem;
+        padding-bottom: 11.9rem;
+    } 
+    .div2_lgm {
+        width: 46rem;
+    }
+    .pclgm {
+        font-size: 4.2rem;
+    }
+    .pclgm_p {
+        font-size: 2.1rem;
+    }
+    .pclgm_img {
+        display: block;
+        width: 55.8rem;
+        height: 53rem;
+        margin-bottom: 0;
+    }
+    .lgm_img1 {
+        display: none;
+    }
+    .ftr1{
+        display: flex;
+    }
+    .ftr2{
+        display: flex;
+    }
+    .f1{
+        margin-right: 2rem;
+    }
+    .footerr{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 180%;
+    }
+
+    .cntr{
+        margin-top: 10rem;
+    }
 }
