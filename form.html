@@ -29,11 +29,11 @@
                         <input required placeholder="Имя" name="username" id="inname" type="text">
                         <label for="inname2" class="lab">Дата рождения</label>
                         <input placeholder="Дата рождения" name="userdata" id="inname2" type="tel">
-                        <label for="inname3" class="lab"><p class="lab">Пол</p></label>
+                        <label for="inname3" class="lab">Пол</label>
                         <p class="lab"><input placeholder="Пол" name="usersex" id="inname3" value="men" type="radio"> Мужской</p>
                         <p class="lab"><input placeholder="Пол" name="usersex" id="inname3" value="woman" type="radio"> Женский</p>
                         <p class="lab"><input placeholder="Пол" name="usersex" id="inname3" value="other" type="radio"> Другой</p>
-                        <label for="inname4">Пароль</label>
+                        <label for="inname4" class="lab">Пароль</label>
                         <input required placeholder="Пароль" name="userpass" id="inname4" type="password">
                     </div>
                     <p class="lab unlich">Контакты</p>
@@ -43,10 +43,12 @@
                                 <label for="inname6" class="lab">Телефон</label>
                                 <input placeholder="Телефон" name="usertel" id="inname6" type="tel">
                                 <label for="inname7" class="lab">Удобный интервал для связи</label>
-                                <p class="lab"><input placeholder="Удобный интервал для связи" name="usercomf" id="inname7" type="checkbox"> Утро</p>
-                                <p class="lab"><input placeholder="Удобный интервал для связи" name="usercomf" id="inname7" type="checkbox"> День</p>
-                                <p class="lab"><input placeholder="Удобный интервал для связи" name="usercomf" id="inname7" type="checkbox"> Вечер</p>
-                                <p class="lab"><input placeholder="Удобный интервал для связи" name="usercomf" id="inname7" type="checkbox"> Ночь</p>
+                                <fieldset>
+                                    <label for="usercomf" class="lab"><input placeholder="Удобный интервал для связи" name="usercomf" id="inname7" type="checkbox">Утро</label>
+                                    <label for="usercomf" class="lab"><input placeholder="Удобный интервал для связи" name="usercomf" id="inname7" type="checkbox"> День</label>
+                                    <label for="usercomf" class="lab"><input placeholder="Удобный интервал для связи" name="usercomf" id="inname7" type="checkbox"> Вечер</label>
+                                    <label for="usercomf" class="lab"><input placeholder="Удобный интервал для связи" name="usercomf" id="inname7" type="checkbox"> Ночь</label>
+                                </fieldset>
                             </div>
                     
                     <button class="seassion_but" style="max-width: 100%;font-family: 'Roboto'; margin-top: 3rem;" type="submit">
